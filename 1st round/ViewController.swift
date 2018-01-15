@@ -3,7 +3,7 @@
 //  1st round
 //
 //  Created by Catherine on 1/5/18.
-//  Copyright © 2018 Catherine. All rights reserved.
+//  Copyright © 2018 Catherine. All rights reserved..
 //
 
 import UIKit
