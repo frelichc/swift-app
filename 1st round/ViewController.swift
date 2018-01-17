@@ -12,17 +12,17 @@ class ViewController: UIViewController {
    
     @IBOutlet weak var StrLabel: UILabel!
    
-    var tapCount = 0
+    @IBOutlet weak var Text1: UITextField!
+  
+    @IBOutlet weak var text2: UITextField!
     
     @IBAction func myactivate(_ sender: Any){
-        
-        tapCount = tapCount + 1
-        if tapCount >= 10 {
-            StrLabel.text = "You tapped the button 10 times!"
-        }
+       print(Text1.text!)
+        print(text2.text!)
+    StrLabel.text = "Answer is...\(Double(Text1.text!)! + Double(text2.text!)!)"
     }
     
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
