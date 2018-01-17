@@ -9,20 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
-   
+    
     @IBOutlet weak var StrLabel: UILabel!
-   
+    
     @IBOutlet weak var Text1: UITextField!
-  
+    
     @IBOutlet weak var text2: UITextField!
     
     @IBAction func myactivate(_ sender: Any){
-       print(Text1.text!)
-        print(text2.text!)
-    StrLabel.text = "Answer is...\(Double(Text1.text!)! + Double(text2.text!)!)"
+        
+        let addition = false
+        
+        if addition {
+            StrLabel.text = "Answer is...\(Double(Text1.text!)! + Double(text2.text!)!)"
+        }   else {
+            StrLabel.text = "Answer is...\(Double(Text1.text!)! - Double(text2.text!)!)"
+        }
     }
     
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,14 +35,14 @@ class ViewController: UIViewController {
         StrLabel.text = "Welcome"
     }
     
-   
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-}
-        // Do any additional setup after loading the view, typically from a nib.
-       
+    }
+    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 
-   
+
